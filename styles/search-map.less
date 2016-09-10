@@ -1,0 +1,94 @@
+.wrapper {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px 0 30px;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+.schools {
+  margin-top: 20px;
+}
+.school {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  background: white;
+  padding: 9px;
+  max-height: 100px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.school__img {
+  min-width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 11px;
+  img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #979797;
+    outline: none;
+  }
+}
+.school__main {
+  display: flex;
+}
+.school__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.school__name {
+  font-size: 21px;
+  font-weight: 600;
+}
+.school__about {
+  max-height: 40px;
+  max-width: 720px;
+  overflow: hidden;
+}
+.school__status {
+  display: flex;
+}
+.school__info {
+  align-self: center;
+  margin: 0 35px 0 5px;
+  white-space: nowrap;
+  text-align: right;
+}
+.school__kind {
+  color: #b16153;
+  margin-bottom: 7px;
+}
+.school__location {
+  margin-bottom: 7px;
+}
+.location-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url('../images/location_gray.svg') no-repeat 0 0;
+  background-size: cover;
+}
+.like-status {
+  border-radius: 6px;
+  background: #ddd;
+  padding: 7px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+.like-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url('../images/like_checked.svg') no-repeat 0 0;
+  background-size: cover;
+}
+.like-status__count {
+  margin-left: 4px;
+}

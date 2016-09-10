@@ -1,0 +1,187 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  .heading {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.logo {
+  background: url('../images/logo-schoolpicker.svg') no-repeat 0 0;
+  width: 147px;
+  height: 55px;
+  transition: opacity ease-out 0.1s;
+  span {
+   visibility: hidden;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.heading {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #A0734F;
+  @media(max-width: 550px) {
+    font-size: 35px;
+  }
+}
+.profile__link {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 10px;
+  @media (max-width: 425px) {
+    margin-top: 20px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.link_green {
+  color: #8BBF84;
+  transition: background ease-out 0.1s;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: darken(#8BBF84, 14%);
+  }
+}
+.link_underline {
+  text-decoration: underline;
+}
+.link_btn-blue {
+  color: #5CA0D7;
+  padding: 4px 20px;
+  border: 2px solid #5CA0D7;
+  border-radius: 8px;
+  transition: background ease-out 0.1s;
+  &:hover, &:focus {
+    color: white;
+    background: #5CA0D7;
+  }
+}
+
+.search__form {
+  display: flex;
+  position: relative;
+  width: 58%;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: white;
+  height: 41px;
+  padding: 6px 9px;
+}
+.tags-list {
+  display: flex;
+  list-style: none;
+}
+.tags-list__item {
+  display: flex;
+  white-space: nowrap;
+  line-height: 0.98;
+  background: #edf2f7;
+  margin-right: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 6px 8px;
+  &:last-child {
+    position: relative;
+    margin-right: 25px;
+  }
+  &:last-child:after {
+    position: absolute;
+    right: -14px;
+    top: 0;
+    content:'';
+    display: inline-block;
+    width: 2px;
+    background: #ececec;
+    height: 27px;
+  }
+}
+.list-item__close-btn {
+  margin: auto 0 auto 10px;
+
+}
+.close-btn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  background-image: url('../images/close-icon.svg');
+  background-size: 9.5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search__input {
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
+  width: 100%;
+  padding-right: 90px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: lighten(black, 20%);
+}
+.search__btn {
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  right: -1px;
+  width: 70px;
+  border: 0;
+  outline: 0;
+  background: #5CA0D7;
+  height: 41px;
+  color: white;
+  text-indent: -9999px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background ease-out 0.1s;
+  &:hover, &:focus {
+    background: darken(#5CA0D7, 14%);
+  }
+}
+.search__btn-label {
+  background: url('../images/search-icon.svg') no-repeat 0 0;
+  background-size: cover;
+  width: 45px;
+  height: 27px;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #DDD;
+  border-radius: 6px;
+  background: hsla(100%, 100%, 100%, 0.97);
+}
+
