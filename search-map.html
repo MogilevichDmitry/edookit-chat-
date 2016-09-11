@@ -43,110 +43,163 @@
     </div><!--header-->
     <div class="content">
         <div class="main">
-            <div class="search__school">
+            <div class="content__search-map">
+                <div class="search-school-box">
+                    <div class="search-school">
+                        <div class="search-school__top-bar">
+                            <div class="search-school__select">
+                                <select>
+                                    <option value="" disabled selected>Typ skoly</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                </select>
+                            </div>
+                            <div class="search-school__select">
+                                <select>
+                                    <option value="" disabled selected>Sposob vyuky</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                </select>
+                            </div>
+                            <div class="search-school__location">
+                                <input class="search-school__location-input"
+                                       id="search-school__input"
+                                       type="text" placeholder="Lokace">
+                                <label class="search-school__location-label"
+                                       for="search-school__input">
+                                </label>
+                            </div>
+                            <div class="view-selector">
+                                <button class="view-selector__item view-selector__item_active">
+                                    <div class="list-icon"></div>
+                                    <span>list</span>
+                                </button>
+                                <button class="view-selector__item">
+                                    <div class="grid-icon"></div>
+                                    <span>grid</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="search-school__size">
+                            <div class="search-school__size-heading">Max velikost skoly</div>
+                            <input class="search-school__size-input" type="range">
+                            <div class="search-school__size-value">
+                                <span class="search-school__size-ranged">451 zaku</span>
+                                <span>5000+ zaku</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-box">
+                    <div class="map-wrapper">
+                        <img src="https://placeimg.com/400/160/animals">
+                        <button class="map-fullscreen-btn fullscreen-btn">
+                            close
+                        </button>
+                    </div>
+                </div>
 
-            </div>
-            <div class="map-box"></div>
-            <div class="schools">
-                <div class="school">
-                    <div class="school__main">
-                        <div class="school__img">
-                        <img src="https://placeimg.com/81/81/arch" alt="school img">
-                    </div>
-                        <div class="school__description">
-                            <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
-                            <div class="school__about">Podporujeme demokratcke prostredi,
-                                kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
-                                i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
-                                schopnosti a dovedosti zaku
+                <div class="schools">
+                    <div class="school">
+                        <div class="school__main">
+                            <div class="school__img">
+                            <img src="https://placeimg.com/81/81/arch" alt="school img">
+                        </div>
+                            <div class="school__description">
+                                <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
+                                <div class="school__about">Podporujeme demokratcke prostredi,
+                                    kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
+                                    i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
+                                    schopnosti a dovedosti zaku
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school__status">
+                            <div class="school__info">
+                                <div class="school__kind">
+                                    Zakladni skola
+                                </div>
+                                <div class="school__location">
+                                    <div class="location-icon"></div>
+                                    <span class="school__location-name">Olomouc</span>
+                                </div>
+                                <div class="school__type">
+                                    Statni skola
+                                </div>
+                            </div>
+                            <div class="like-status">
+                                <div class="like-icon"></div>
+                                <span class="like-status__count">354</span>
                             </div>
                         </div>
                     </div>
-                    <div class="school__status">
-                        <div class="school__info">
-                            <div class="school__kind">
-                                Zakladni skola
+                    <div class="school">
+                        <div class="school__main">
+                            <div class="school__img">
+                                <img src="https://placeimg.com/83/83/arch" alt="school img">
                             </div>
-                            <div class="school__location">
-                                <div class="location-icon"></div>
-                                Olomouc
-                            </div>
-                            <div class="school__type">
-                                Statni skola
-                            </div>
-                        </div>
-                        <div class="like-status">
-                            <div class="like-icon"></div>
-                            <span class="like-status__count">354</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="school__main">
-                        <div class="school__img">
-                            <img src="https://placeimg.com/83/83/arch" alt="school img">
-                        </div>
-                        <div class="school__description">
-                            <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
-                            <div class="school__about">Podporujeme demokratcke prostredi,
-                                kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
-                                i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
-                                schopnosti a dovedosti zaku
+                            <div class="school__description">
+                                <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
+                                <div class="school__about">Podporujeme demokratcke prostredi,
+                                    kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
+                                    i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
+                                    schopnosti a dovedosti zaku
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="school__status">
-                        <div class="school__info">
-                            <div class="school__kind">
-                                Zakladni skola a materski skola
+                        <div class="school__status">
+                            <div class="school__info">
+                                <div class="school__kind">
+                                    Zakladni skola a materski skola
+                                </div>
+                                <div class="school__location">
+                                    <div class="location-icon"></div>
+                                    <span class="school__location-name">Brno</span>
+                                </div>
+                                <div class="school__type">
+                                    Statni skola
+                                </div>
                             </div>
-                            <div class="school__location">
-                                <div class="location-icon"></div>
-                                Brno
-                            </div>
-                            <div class="school__type">
-                                Statni skola
-                            </div>
-                        </div>
-                        <div class="like-status">
-                            <div class="like-icon"></div>
-                            <span class="like-status__count">354</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="school__main">
-                        <div class="school__img">
-                            <img src="https://placeimg.com/97/97/arch" alt="school img">
-                        </div>
-                        <div class="school__description">
-                            <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
-                            <div class="school__about">Podporujeme demokratcke prostredi,
-                                kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
-                                i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
-                                schopnosti a dovedosti zaku
+                            <div class="like-status">
+                                <div class="like-icon"></div>
+                                <span class="like-status__count">354</span>
                             </div>
                         </div>
                     </div>
-                    <div class="school__status">
-                        <div class="school__info">
-                            <div class="school__kind">
-                                Jazykova skola
+                    <div class="school">
+                        <div class="school__main">
+                            <div class="school__img">
+                                <img src="https://placeimg.com/97/97/arch" alt="school img">
                             </div>
-                            <div class="school__location">
-                                <div class="location-icon"></div>
-                                Praha
-                            </div>
-                            <div class="school__type">
-                                Soukroma skola
+                            <div class="school__description">
+                                <div class="school__name">ScioSkola - zakladni skola s.r.o</div>
+                                <div class="school__about">Podporujeme demokratcke prostredi,
+                                    kladeni otazek a odpovedi. Rozvijime umeni prezentovat sve znalosti
+                                    i schopnost naslouchat drunym, diskutovat. Ucivo mame dle individualnich
+                                    schopnosti a dovedosti zaku
+                                </div>
                             </div>
                         </div>
-                        <div class="like-status">
-                            <div class="like-icon"></div>
-                            <span class="like-status__count">354</span>
+                        <div class="school__status">
+                            <div class="school__info">
+                                <div class="school__kind">
+                                    Jazykova skola
+                                </div>
+                                <div class="school__location">
+                                    <div class="location-icon"></div>
+                                    <span class="school__location-name">Praha</span>
+                                </div>
+                                <div class="school__type">
+                                    Soukroma skola
+                                </div>
+                            </div>
+                            <div class="like-status">
+                                <div class="like-icon"></div>
+                                <span class="like-status__count">354</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div><!--schools-->
             </div>
         </div><!--main-->
     </div><!--home__content-->
