@@ -51,13 +51,15 @@
       margin-bottom: 245px;
     }
   }
-}
-.content__search-map_row {
-  flex-direction: row;
-  .search-school {
-    min-width: 100%;
+  @media (min-width: 900px) {
+    .school__description {
+      .school__info {
+        display: none;
+      }
+    }
   }
 }
+
 .search-school-box {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -97,9 +99,9 @@
     margin-top: 15px;
   }
   @media (max-width: 400px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
+}
 }
 .search-school__select {
   margin-right: 15px;
@@ -405,6 +407,9 @@
   &_active {
     background-image: url('../images/minimize-icon.svg');
   }
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 .map-box_expanded {
   position: static;
@@ -413,6 +418,22 @@
   max-width: 560px;
   max-height: 690px;
   margin-left: 20px;
+  @media (max-width: 1024px) {
+    position: absolute;
+    margin-left: 0;
+    top: 190px;
+    min-width: 100%;
+    min-height: 206px;
+    max-height: 206px;
+    left: 0;
+    right: 0;
+  }
+  @media (max-width: 700px) {
+    top: 255px;
+  }
+  @media (max-width: 400px) {
+    top: 350px;
+  }
 }
 
 .schools {
@@ -428,6 +449,7 @@
   padding: 9px;
   max-height: 100px;
   margin-bottom: 10px;
+  overflow: hidden;
   &:last-child {
     margin-bottom: 0;
   }
@@ -458,12 +480,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .school__name {
-    font-size: 20px;
-  }
-  .school__about {
-    font-size: 13px;
-  }
   .school__info {
     display: flex;
     align-self: flex-start;
@@ -472,8 +488,13 @@
     .school__kind {
       margin-right: 6px;
     }
-    @media (min-width: 900px) {
-      display: none;
+  }
+  @media (max-width: 900px) {
+    .school__name {
+      font-size: 20px;
+    }
+    .school__about {
+      font-size: 13px;
     }
   }
 }
@@ -485,6 +506,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   @media (max-width: 600px) {
+    font-size: 18px;
     max-width: 240px;
   }
   @media (max-width: 375px) {
@@ -525,7 +547,6 @@
   @media (max-width: 475px) {
     flex-direction: column-reverse;
   }
-
 }
 .school__info {
   align-self: center;
@@ -577,4 +598,89 @@
   height: 15px;
   background: url('../images/owl.svg') no-repeat 0 0;
   background-size: cover;
+}
+
+.content__search-map_row {
+  flex-direction: row;
+  .search-school {
+    min-width: 100%;
+  }
+  .school__status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+    .school__info {
+      order: 2;
+      margin: 0;
+      font-size: 15px;
+    }
+    .like-status {
+      align-self: flex-end;
+    }
+    .school__kind, .school__type {
+      display: none;
+    }
+    @media (max-width: 475px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: 1023px) and (min-width: 700px){
+    flex-direction: column;
+    .search-school-box {
+      height: 170px;
+    }
+    .search-school__top-bar {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .search-school__top-bar-aside {
+      margin-top: 0;
+    }
+    .search-school__bottom-bar {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  @media (min-width: 900px) {
+    .school__description {
+      .school__info {
+        display: flex;
+      }
+    }
+    .school__name {
+      font-size: 20px;
+    }
+    .school__about {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 1360px) and (min-width: 1023px) {
+    .search-school-box {
+      height: 235px;
+    }
+    .search-school__top-bar {
+      flex-direction: column;
+    }
+    .search-school__top-bar-aside {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .school__name {
+      max-width: 260px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .school__name {
+      max-width: 220px;
+    }
+  }
+  @media (max-width: 375px) {
+    .school__name {
+      max-width: 180px;
+    }
+  }
 }
