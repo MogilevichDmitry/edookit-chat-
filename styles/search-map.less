@@ -184,23 +184,26 @@
 }
 .search-school__advanced{
   display: flex;
+  align-items: center;
+  text-align: center;
   font-size: 16px;
   background: none;
   border: 0;
   outline: 0;
   color: #5ca0d7;
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: url('../images/arrow-down_blue.svg') no-repeat 0 0;
-    background-size: cover;
-    margin-left: 5px;
-  }
   @media(max-width: 1200px) {
     margin-top: 10px;
   }
+}
+.advanced-btn_icon {
+  margin-left: 5px;
+}
+.arrow-down_blue {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('../images/arrow-down_blue.svg') no-repeat 0 0;
+  background-size: cover;
 }
 .search-school__size {
   display: flex;
@@ -219,6 +222,7 @@
   -webkit-appearance: none;
   margin: 13px 0 7px;
   width: 100%;
+  height: 3px;
 }
 .search-school__size-input[type=range]:focus {
   outline: none;

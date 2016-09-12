@@ -43,7 +43,10 @@
     </div><!--header-->
     <div class="content">
         <div class="main">
-            <div class="content__search-map">
+            <div
+                class="content__search-map"
+                id="content__search-map"
+            >
                 <div>
                     <div class="search-school-box">
                         <div class="search-school">
@@ -94,7 +97,10 @@
                                         <span>5000+ zaku</span>
                                     </div>
                                 </div>
-                                <button class="search-school__advanced">Pokrocile vyhledavani</button>
+                                <a class="search-school__advanced">
+                                    <span>Pokrocile vyhledavani</span>
+                                    <div class="advanced-btn_icon arrow-down_blue"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -285,10 +291,13 @@
                         </div>
                     </div><!--schools-->
                 </div>
-                <div class="map-box">
+                <div class="map-box" id="map-box">
                 <div class="map-wrapper">
                     <img src="https://placeimg.com/560/690/animals">
-                    <button class="map-fullscreen-btn fullscreen-btn">
+                    <button
+                        class="map-fullscreen-btn fullscreen-btn"
+                        id="map-expand"
+                    >
                         close
                     </button>
                 </div>
@@ -299,4 +308,5 @@
 </div><!--home-->
 </body>
 <script src="js/less.js"></script>
+<script src="js/common.js"></script>
 </html>
