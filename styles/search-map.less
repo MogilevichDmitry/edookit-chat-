@@ -268,6 +268,14 @@
     width: 100%;
   }
 }
+.map-box_expanded {
+  position: static;
+  margin-left: 20px;
+  min-width: 540px;
+  max-width: 540px;
+  min-height: 690px;
+  max-height: 690px;
+}
 .map-wrapper {
   position: relative;
 }
@@ -292,14 +300,6 @@
   &_active {
     background-image: url('../images/minimize-icon.svg');
   }
-}
-.map-box_expanded {
-  position: static;
-  min-width: 560px;
-  min-height: 690px;
-  max-width: 560px;
-  max-height: 690px;
-  margin-left: 20px;
 }
 
 .schools {
@@ -728,9 +728,16 @@
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .content__search-map_row .search-school__location-input {
     max-width: 155px;
+  }
+
+}
+@media (min-width: 1060px) {
+  .map-box_expanded {
+    min-width: 560px;
+    max-width: 560px;
   }
 }
 

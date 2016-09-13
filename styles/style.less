@@ -10,28 +10,20 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
-.header {
-  .heading {
-    @media(max-width: 768px) {
-      display: none;
-    }
-  }
+.logo {
+  background: url('../images/logo-schoolpicker.svg') no-repeat 0 0;
 }
+
+/* header */
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 425px) {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .header__profile {
   order: 3;
 }
-.logo {
-  background: url('../images/logo-schoolpicker.svg') no-repeat 0 0;
+.header__logo {
   width: 147px;
   height: 55px;
   transition: opacity ease-out 0.1s;
@@ -45,14 +37,6 @@
 .heading {
   font-size: 45px;
   color: #A0734F;
-  @media(max-width: 550px) {
-    font-size: 35px;
-  }
-}
-.header__profile {
-  @media (max-width: 425px) {
-    margin-top: 20px;
-  }
 }
 .profile__link {
   display: inline-block;
@@ -189,6 +173,29 @@
   border-radius: 6px;
   background: hsla(100%, 100%, 100%, 0.97);
 }
+
+
+/* media */
+@media(max-width: 768px) {
+  .header .heading {
+    display: none;
+  }
+}
+@media(max-width: 550px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__profile {
+    margin-top: 20px;
+  }
+}
+
 
 /* Internet Explorer 10+, Microsoft Edge Browser */
 _:-ms-lang(x), .tags-list {
