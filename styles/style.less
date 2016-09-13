@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
+@import './colors.less';
 
 * {
   padding: 0;
@@ -36,7 +37,7 @@
 }
 .heading {
   font-size: 45px;
-  color: #A0734F;
+  color: @sienna;
 }
 .profile__link {
   display: inline-block;
@@ -49,25 +50,25 @@
   }
 }
 .link_green {
-  color: #8BBF84;
+  color: @greenLink;
   transition: background ease-out 0.1s;
   &:hover, &:focus {
     text-decoration: none;
-    color: darken(#8BBF84, 14%);
+    color: darken(@greenLink, 14%);
   }
 }
 .link_underline {
   text-decoration: underline;
 }
 .link_btn-blue {
-  color: #5CA0D7;
+  color: @blue;
   padding: 4px 20px;
-  border: 2px solid #5CA0D7;
+  border: 2px solid @blue;
   border-radius: 8px;
   transition: background ease-out 0.1s;
   &:hover, &:focus {
-    color: white;
-    background: #5CA0D7;
+    color: @white;
+    background: @blue;
   }
 }
 
@@ -75,9 +76,9 @@
   display: flex;
   position: relative;
   width: 58%;
-  border: 1px solid #dddddd;
+  border: 1px solid @greySecondary;
   border-radius: 6px;
-  background: white;
+  background: @white;
   height: 41px;
   padding: 6px 9px;
 }
@@ -89,7 +90,7 @@
   display: flex;
   white-space: nowrap;
   line-height: 0.98;
-  background: #edf2f7;
+  background: @lightGrey;
   margin-right: 5px;
   border-radius: 20px;
   font-size: 15px;
@@ -105,7 +106,7 @@
     content:'';
     display: inline-block;
     width: 2px;
-    background: #ececec;
+    background: @lightGrey;
     height: 27px;
   }
 }
@@ -117,7 +118,7 @@
   width: 15px;
   height: 15px;
   cursor: pointer;
-  background: white;
+  background: @white;
   border-radius: 50%;
   background-image: url('../images/close-icon.svg');
   background-size: 9.5px;
@@ -132,7 +133,7 @@
   border: none;
   outline: none;
   font-size: 15px;
-  color: lighten(black, 20%);
+  color: @black;
 }
 .search__btn {
   position: absolute;
@@ -142,15 +143,15 @@
   width: 70px;
   border: 0;
   outline: 0;
-  background: #5CA0D7;
+  background: @blue;
   height: 41px;
-  color: white;
+  color: @white;
   text-indent: -9999px;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
   transition: background ease-out 0.1s;
   &:hover, &:focus {
-    background: darken(#5CA0D7, 14%);
+    background: darken(@blue, 14%);
   }
 }
 .search__btn-label {
@@ -169,7 +170,7 @@
 }
 
 .box {
-  border: 1px solid #DDD;
+  border: 1px solid @greySecondary;
   border-radius: 6px;
   background: hsla(100%, 100%, 100%, 0.97);
 }
