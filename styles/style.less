@@ -146,7 +146,6 @@
   cursor: pointer;
 }
 
-
 .like-status {
   border-radius: 6px;
   background: @greySecondary;
@@ -162,9 +161,10 @@
     width: 21px;
     height: 21px;
     display: inline-block;
+    padding: 0;
     background: url('../images/like.svg') no-repeat 0 0;
     background-size: cover;
-    padding: 0;
+    transition: background 0.25s ease-in-out;
   }
   input[type=checkbox]:checked + label {
     background: url('../images/like_checked.svg') no-repeat 0 0;
@@ -276,6 +276,11 @@
   width: 30px;
   height: 24px;
   cursor: pointer;
+  transition: background 0.4s ease-in-out;
+  span {
+    font-size: 1px;
+    visibility: hidden;
+  }
   &:first-child {
     border-radius: 5px 0 0 5px;
   }
@@ -301,9 +306,15 @@
       background-size: cover;
     }
   }
-  span {
-    font-size: 1px;
-    visibility: hidden;
+  &:hover, &:focus {
+    .list-icon {
+      background: url('../images/list-icon_blue.svg') no-repeat 0 0;
+      background-size: cover;
+    }
+    .grid-icon{
+      background: url('../images/grid-icon_blue.svg');
+      background-size: cover;
+    }
   }
 }
 
