@@ -109,7 +109,7 @@
   margin-right: 5px;
   border-radius: 20px;
   font-size: 15px;
-  padding: 6px 8px;
+  padding: 6px 8px 6px;
   &:last-child {
     position: relative;
     margin-right: 25px;
@@ -127,7 +127,6 @@
 }
 .list-item__close-btn {
   margin: auto 0 auto 10px;
-
 }
 .close-btn {
   display: inline-block;
@@ -174,7 +173,7 @@
   background: url('../images/search-icon.svg') no-repeat 0 0;
   background-size: cover;
   width: 45px;
-  height: 27px;
+  height: 45px;
   position: absolute;
   top: 6px;
   right: 2px;
@@ -190,4 +189,9 @@
   border-radius: 6px;
   background: hsla(100%, 100%, 100%, 0.97);
 }
+
+/* Internet Explorer 10+, Microsoft Edge Browser */
+_:-ms-lang(x), .tags-list {
+  display: none;
+  }
 
