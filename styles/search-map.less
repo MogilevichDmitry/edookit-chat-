@@ -190,6 +190,7 @@
   background: none;
   border: 0;
   outline: 0;
+  cursor: pointer;
   color: #5ca0d7;
   @media(max-width: 1200px) {
     margin-top: 10px;
@@ -707,4 +708,14 @@
       margin-bottom: 245px;
     }
   }
+}
+
+/* Internet Explorer 10+, Microsoft Edge Browser */
+_:-ms-lang(x),
+  .search-school__select {
+    background-image: none;
+    background-width: 0;
+    select {
+      padding: 8px 8px 8px 9px;
+    }
 }
