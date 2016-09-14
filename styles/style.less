@@ -164,9 +164,11 @@
     padding: 0;
     background: url('../images/like.svg') no-repeat 0 0;
     background-size: cover;
-    transition: background 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
+
   }
   input[type=checkbox]:checked + label {
+    animation: scale 1s;
     background: url('../images/like_checked.svg') no-repeat 0 0;
   }
 }
@@ -246,10 +248,14 @@
   background-size: 9.5px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: .2s;
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 .fullscreen-btn {
   cursor: pointer;
-  background: @blue;
+  background-color: @blue;
   width: 35px;
   height: 35px;
   border: 0;
@@ -260,6 +266,10 @@
   background-size: 19px;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background-color: darken(@blue, 14%);
+  }
   &_active {
     background-image: url('../images/minimize-icon.svg');
   }
@@ -318,6 +328,15 @@
   }
 }
 
+/* keyframes */
+@keyframes scale {
+  from {
+    transform: scale(1.15, 1.15);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
 
 /* media */
 @media (max-width: 768px) {
