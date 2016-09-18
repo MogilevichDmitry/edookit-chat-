@@ -16,9 +16,13 @@
   padding: 20px 0 30px;
   min-height: 100vh;
   background: @greyPrimary;
+  color: @black;
 }
 .content {
   margin-top: 20px;
+}
+.content-wrapper {
+  display: flex;
 }
 .box {
   border: 1px solid @greySecondary;
@@ -216,9 +220,27 @@
 }
 
 /* links and buttons */
+.link_blue {
+  font-size: 17px;
+  color: @blue;
+  transition: background ease-out 0.1s;
+  text-decoration: none;
+  background: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: darken(@blue, 14%);
+  }
+}
 .link_green {
   color: @greenLink;
   transition: background ease-out 0.1s;
+  background: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
   &:hover, &:focus {
     text-decoration: none;
     color: darken(@greenLink, 14%);
@@ -226,6 +248,18 @@
 }
 .link_underline {
   text-decoration: underline;
+}
+.link_arrow-left {
+  display: flex;
+  align-items: center;
+  &:before {
+    content: '';
+    background: url('../images/arrow-left_blue.svg') no-repeat 0 0;
+    background-size: cover;
+    width: 17px;
+    height: 18px;
+    margin-right: 7px;
+  }
 }
 .link_btn-blue {
   color: @blue;
@@ -252,6 +286,24 @@
   transition: .2s;
   &:hover {
     transform: rotate(90deg);
+  }
+}
+.edit-btn {
+  background-color: @blue;
+  background-image: url('../images/pen.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+  border-radius: 0 0 0 6px;
+  border: 0;
+  outline: 0;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  transition: background 0.2s ease-in-out;
+  &:hover, &:focus {
+    background-color: darken(@blue, 14%);
   }
 }
 .fullscreen-btn {
