@@ -1,0 +1,56 @@
+@import './colors.less';
+
+.profile-nav {
+  list-style: none;
+  font-weight: 600;
+}
+.profile-nav__item {
+  margin-bottom: 10px;
+  &:nth-child(1) {
+    .profile-nav__link:before {
+      background: @slateBlue;
+    }
+  }
+  &:nth-child(2) {
+    .profile-nav__link:before {
+      background: @sienna;
+    }
+  }
+  &:nth-child(3) {
+    .profile-nav__link:before {
+      background: @goldenrod;
+    }
+  }
+  &:nth-child(4) {
+    .profile-nav__link:before {
+      background: @mistyRose;
+    }
+  }
+  &:nth-child(5) {
+    .profile-nav__link:before {
+      background: @paleGreen;
+    }
+  }
+  &:nth-child(6) {
+    .profile-nav__link:before {
+      background: @azure;
+    }
+  }
+
+}
+.profile-nav__link {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  color: @black;
+  text-decoration: none;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 40px;
+    background: @goldenrod;
+    margin-right: 15px;
+    border-radius: 4px;
+  }
+}
