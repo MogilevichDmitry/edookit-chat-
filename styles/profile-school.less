@@ -64,13 +64,14 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  margin-left: 20px;
 }
 .school-info {
   display: flex;
   border-radius: 6px;
   border: 1px solid @greySecondary;
   background: white;
-  margin: 10px 0 0 20px;
+  margin-top: 10px;
 }
 .school-info__aside {
   padding-bottom: 10px;
@@ -107,7 +108,7 @@
 .contacts__title {
   font-weight: 600;
 }
-.contacts__info {
+.contacts__data {
   margin-bottom: 12px;
 }
 .school-info__main {
@@ -118,4 +119,51 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.school-info__light {
+  display: flex;
+  justify-content: space-between;
+}
+.school-info__status {
+  padding-right: 5px;
+  min-width: 48%;
+}
+.school-info__status-heading {
+  color: @redAlert;
+}
+.school-info__status-title {
+  font-weight: 600;
+  display: inline-block;
+}
+.school-info__status-data {
+  margin-left: 3px;
+  display: inline-block;
+}
+.light-pluses {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.light-pluses__item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 5px;
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    background: @azure;
+    width: 15px;
+    height: 15px;
+  }
+}
+.school-info__description {
+  margin-top: 35px;
+  ul {
+    margin: 20px 0 20px 25px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
 }
