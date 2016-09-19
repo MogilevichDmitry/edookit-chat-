@@ -2,7 +2,7 @@
 
 .profile-nav {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   list-style: none;
   font-weight: 600;
 }
@@ -113,12 +113,15 @@
 }
 .school-info__main {
   width: 100%;
-  padding: 15px;
+  padding: 17px 15px 15px;
 }
 .school-info__main-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.school-info__title {
+  font-size: 35px;
 }
 .school-info__light {
   display: flex;
@@ -127,9 +130,12 @@
 .school-info__status {
   padding-right: 5px;
   min-width: 48%;
+  font-size: 18px;
 }
 .school-info__status-heading {
-  color: @redAlert;
+  font-size: 20px;
+  color: #b16153;
+  margin-bottom: 10px;
 }
 .school-info__status-title {
   font-weight: 600;
@@ -143,6 +149,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  font-size: 18.5px;
 }
 .light-pluses__item {
   display: flex;
@@ -160,6 +167,7 @@
 }
 .school-info__description {
   margin-top: 35px;
+  font-size: 18px;
   ul {
     margin: 20px 0 20px 25px;
   }
@@ -215,10 +223,11 @@
   margin-top: 20px;
 }
 .school-stats__item {
-  width: 30%;
+  width: 27.5%;
 }
 .school-stats__heading {
-  margin-bottom: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 .school-stats__graph {
   width: 100%;
@@ -312,7 +321,7 @@
   background: #ececec;
   border-radius: 6px;
   border: 2px dashed @blue;
-  padding: 15px;
+  padding: 15px 15px 10px;
   text-align: justify;
   overflow: hidden;
 }
@@ -326,10 +335,10 @@
   margin-bottom: 13px;
 }
 .discussion__input-name {
-  width: 49%;
+  width: 48%;
 }
 .discussion__input-email {
-  width: 49%;
+  width: 48%;
 }
 .discussion__input-text {
   width: 100%;
@@ -345,8 +354,8 @@
   input[type=checkbox] + label:before {
     cursor: pointer;
     content: "\00a0";
-    width: 19px;
-    height: 19px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
     padding: 0;
     background: @white;
@@ -359,7 +368,7 @@
   input[type=checkbox]:checked + label:before {
     content: "\2713";
     line-height: 1.2;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
   }
   span {
@@ -368,4 +377,61 @@
 }
 .discussion__btn {
   float: right;
+}
+.discussion__comments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.comment {
+  display: flex;
+  margin-top: 10px;
+}
+.comment__img {
+  margin: 10px 10px 0 0;
+  min-width: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+}
+.comment__main {
+  display: flex;
+  flex-direction: column;
+  background: #ececec;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14.5px;
+}
+.comment__text {
+  font-weight: 600;
+}
+.comment__main-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.comment__main-info {
+  display: flex;
+}
+.comment__main-username {
+  font-weight: 600;
+  margin-left: 15px;
+}
+.comment__main-link {
+  font-size: 15px;
+}
+
+.subcomment {
+  display: flex;
+  width: ~"calc(100% - 70px)";
+  align-self: flex-end;
+  margin-top: 5px;
+  .comment__main {
+    background: #d1e6f7;
+  }
 }
