@@ -64,7 +64,7 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .school-info {
   display: flex;
@@ -172,6 +172,7 @@
   margin-top: 20px;
 }
 .profile-heading {
+  font-size: 25px;
   &:after {
     content: '';
     display: block;
@@ -268,4 +269,25 @@
   font-size: 18px;
   margin-top: 11px;
   max-width: 660px;
+}
+
+/* school-gallery */
+.school-gallery__photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.school-gallery__photo {
+  width: 230px;
+  height: 230px;
+  margin: 0 25px 25px 0;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+  }
 }
