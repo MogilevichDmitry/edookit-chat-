@@ -291,3 +291,81 @@
     outline: 0;
   }
 }
+
+/* school-map */
+.school-map__box {
+  margin-top: 20px;
+  border: 1px solid @greySecondary;
+  border-radius: 6px;
+  width: 100%;
+  height: 345px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* school-discussion */
+.school-discussion__form {
+  margin-top: 20px;
+  background: #ececec;
+  border-radius: 6px;
+  border: 2px dashed @blue;
+  padding: 15px;
+  text-align: justify;
+  overflow: hidden;
+}
+.discussion__input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid @greySecondary;
+  outline: none;
+  margin-bottom: 13px;
+}
+.discussion__input-name {
+  width: 49%;
+}
+.discussion__input-email {
+  width: 49%;
+}
+.discussion__input-text {
+  width: 100%;
+}
+.discussion__field-checkbox {
+  display: flex;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+  input[type=checkbox] {
+    display:none;
+  }
+  input[type=checkbox] + label:before {
+    cursor: pointer;
+    content: "\00a0";
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    padding: 0;
+    background: @white;
+    border: 1px solid @blue;
+    border-radius: 6px;
+    text-align: center;
+    color: @blue;
+    margin-right: 10px;
+  }
+  input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  span {
+    font-weight: 600;
+  }
+}
+.discussion__btn {
+  float: right;
+}

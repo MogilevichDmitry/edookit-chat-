@@ -317,11 +317,39 @@
                     </div>
                     <div class="profile-box school-map">
                         <h2 class="profile-heading">Map</h2>
-                        <div>STATS</div>
+                        <div class="school-map__box">
+                            <img src="https://placeimg.com/1000/345/any" />
+                        </div>
                     </div>
                     <div class="profile-box school-discussion">
                         <h2 class="profile-heading">Discussion</h2>
-                        <div>STATS</div>
+                        <form class="school-discussion__form">
+                            <input
+                                class="discussion__input discussion__input-name"
+                                type="text"
+                                placeholder="Name"
+                            />
+                            <input
+                                class="discussion__input discussion__input-email"
+                                type="email"
+                                placeholder="Email"
+                            />
+                            <input
+                                class="discussion__input discussion__input-text"
+                                type="text"
+                                placeholder="Text"
+                            />
+                            <label class="discussion__field-checkbox">
+                                <input
+                                    type='checkbox'
+                                    value='valuable'
+                                    id="email-notification"
+                                />
+                                <label for="email-notification"></label>
+                                <span>Send me an email notification</span>
+                            </label>
+                            <input class="discussion__btn add-btn" type="submit" value="Add" />
+                        </form>
                     </div>
                 </div>
             </div>
