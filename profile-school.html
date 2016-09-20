@@ -19,32 +19,32 @@
                     <a class="profile__link link_green link_underline" href="#">Sign up</a>
                     <a class="profile__link link_btn-blue" href="#">Login</a>
                 </div>
-                <form class="search__form">
+               <!-- <form class="search__form">
                     <ul class="tags-list">
                         <li class="tags-list__item">
                             Brno
                             <a class="list-item__close-btn close-btn"></a>
                         </li>
-                        <!--<li class="tags-list__item">
+                        &lt;!&ndash;<li class="tags-list__item">
                             stredni skola
                             <a class="list-item__close-btn close-btn"></a>
                         </li>
                         <li class="tags-list__item">
                             anglicky
                             <a class="list-item__close-btn close-btn"></a>
-                        </li>-->
+                        </li>&ndash;&gt;
                     </ul>
                     <input class="search__input" type="text" />
                     <input class="search__btn" id="search-button" type="submit" value="search" />
                     <label class="search__btn-label" for="search-button"></label>
-                </form>
+                </form>-->
             </div>
         </div>
     </div><!--header-->
     <div class="content">
         <div class="main">
-            <div class="content-wrapper">
-                <ul class="profile-nav">
+            <div class="content-wrapper profile-school__content">
+                <ul id="profile-nav" class="profile-nav">
                     <li class="profile-nav__item">
                         <a href="#info" class="profile-nav__link profile-nav__link_active">Info</a>
                     </li>
@@ -74,25 +74,35 @@
                             </div>
                             <div class="school-info__contacts">
                                 <h3 class="contacts__heading">Contacts:</h3>
-                                <div class="contacts__title">Address:</div>
-                                <div class="contacts__data">
-                                    311 Halvorson Trace Apt. 622
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Address:</div>
+                                    <div class="contacts__data">
+                                        311 Halvorson Trace Apt. 622
+                                    </div>
                                 </div>
-                                <div class="contacts__title">Email:</div>
-                                <div class="contacts__data">
-                                    zssmbrno@yahoo.com
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Email:</div>
+                                    <div class="contacts__data">
+                                        zssmbrno@yahoo.com
+                                    </div>
                                 </div>
-                                <div class="contacts__title">Website:</div>
-                                <div class="contacts__data">
-                                    www.zssmbrno.cz
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Website:</div>
+                                    <div class="contacts__data">
+                                        www.zssmbrno.cz
+                                    </div>
                                 </div>
-                                <div class="contacts__title">Telephone:</div>
-                                <div class="contacts__data">
-                                    +420 603 657 987
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Telephone:</div>
+                                    <div class="contacts__data">
+                                        +420 603 657 987
+                                    </div>
                                 </div>
-                                <div class="contacts__title">Principal:</div>
-                                <div class="contacts__data">
-                                    Mrg. Marguerite Black
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Principal:</div>
+                                    <div class="contacts__data">
+                                        Mrg. Marguerite Black
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -286,7 +296,9 @@
                             <div class="school-gallery__photo">
                                 <img src="https://placeimg.com/247/247/any" alt="school gallery photo" />
                             </div>
-
+                            <div class="school-gallery__photo">
+                                <img src="https://placeimg.com/247/247/any" alt="school gallery photo" />
+                            </div>
                         </div>
                         <ul class="pagination">
                             <li class="pagination__item">
