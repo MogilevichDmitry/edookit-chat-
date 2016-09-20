@@ -440,6 +440,7 @@
 }
 .comment__main-link {
   font-size: 15px;
+  align-self: flex-end;
 }
 
 .subcomment {
@@ -487,7 +488,7 @@
     margin: 0 0 15px;
   }
   .profile-nav__item {
-    margin-right: 15px;
+    margin-right: 25px;
     &:last-child {
       margin-right: 0;
     }
@@ -661,6 +662,18 @@
   .light-pluses {
     font-size: 16px;
   }
+  .school-event__title {
+    font-size: 22px;
+  }
+  .school-event__date {
+    font-size: 16px;
+  }
+  .school-event__description {
+    font-size: 15px;
+  }
+  .subcomment {
+    width: ~"calc(100% - 30px)";
+  }
 }
 @media (max-width: 500px) {
   .school-info__status {
@@ -684,6 +697,12 @@
   }
 }
 @media (max-width: 475px) {
+  .profile-nav {
+    flex-direction: column;
+  }
+  .profile-nav__item {
+    margin-right: 0;
+  }
   .profile-heading {
     font-size: 22px;
   }
@@ -695,5 +714,68 @@
   }
   .school-discussion__form {
     padding: 10px 10px 5px;
+  }
+  .school-event__title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 425px) {
+  .comment__main-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .comment__main-username {
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+  .discussion__field-checkbox {
+    span {
+      font-size: 15px;
+    }
+  }
+  .school-event {
+    flex-direction: column;
+    position: relative;
+  }
+  .school-event__main {
+    margin-left: 0;
+  }
+  .school-event__main-header {
+    position: absolute;
+    top: 20px;
+    left: 135px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .school-discussion__form {
+    padding: 10px;
+  }
+  .discussion__btn {
+    width: 100%;
+    margin-top: 10px;
+    background-position: 43% center;
+  }
+  .light-pluses__item {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .school-info__photo {
+    max-width: 180px;
+    min-width: 180px;
+    height: 180px;
+  }
+  .school-info__main {
+    margin-top: 180px;
+  }
+  .school-info__main-header {
+    position: static;
+    margin-bottom: 0;
+    .like-status {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
   }
 }
