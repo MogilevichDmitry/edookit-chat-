@@ -49,6 +49,121 @@ button {
   display: flex;
   align-items: center;
 }
+.header__menu {
+  position: relative;
+}
+.menu-list {
+  display: flex;
+  width: 560px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 31px;
+  right: -38px;
+  z-index: 999;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid @greySecondary;
+  padding: 10px 26px 15px;
+  -webkit-box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.75);
+  &:before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: white;
+    position: absolute;
+    top: -5.5px;
+    right: 40px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid @greySecondary;
+  border-radius: 6px;
+  margin: 0 25px 25px 0;
+  width: 150px;
+  height: 195px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(1),
+  &:nth-last-child(2),
+  &:nth-last-child(3) {
+    margin-bottom: 0;
+  }
+}
+.menu__item-schoolpicker {
+  padding-top: 10px;
+  justify-content: space-between;
+  .logo-schoolpicker {
+    width: 113px;
+    height: 45px;
+    text-indent: -9999px;
+  }
+}
+.menu__item-share {
+  padding-top: 10px;
+  justify-content: space-between;
+  .logo-share {
+    width: 113px;
+    height: 45px;
+    text-indent: -9999px;
+  }
+}
+.menu__item-chat {
+  padding-top: 10px;
+  justify-content: space-between;
+  .logo-chat {
+    width: 113px;
+    height: 45px;
+    text-indent: -9999px;
+  }
+}
+.menu__item-dashboard {
+  padding-top: 15px;
+  .logo-dashboard {
+    width: 76px;
+    height: 63px;
+  }
+}
+.menu__item-contacts {
+  padding-top: 15px;
+  .logo-contacts {
+    width: 58px;
+    height: 64px;
+  }
+}
+.menu__item-btn {
+  background: @blue;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  padding: 4px 20px;
+  align-self: center;
+  text-decoration: none;
+}
+.menu__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 17px 0 26px;
+}
+.menu__item-img {
+  min-width: 125px;
+  max-width: 125px;
+  height: 70px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .header__notifications {
   margin: 0 20px 0;
 }
@@ -66,7 +181,7 @@ button {
   border-radius: 50%;
   background: @orangeAlert;
 }
-.username {
+.header__username {
   font-size: 17.5px;
   letter-spacing: 0.5px;
 }
@@ -361,6 +476,10 @@ button {
   font-size: 14px;
   letter-spacing: .1px;
 }
+.btn_disabled {
+  background: @grey4;
+  cursor: default;
+}
 .menu-btn {
   width: 21px;
   height: 21px;
@@ -493,5 +612,17 @@ button {
   background-image: url('../images/community/chat-logo.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+.logo-dashboard {
+  background-image: url('../images/community/img-dashbord.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logo-contacts {
+  background-image: url('../images/community/img-contacts.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
