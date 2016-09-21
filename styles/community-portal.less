@@ -56,7 +56,7 @@ button {
 .notifications__amount {
   position: absolute;
   top: -5px;
-  right: -1px;
+  right: 0px;
   font-size: 10px;
   cursor: pointer;
   padding: 2px 3px;
@@ -287,6 +287,67 @@ button {
   background-repeat: no-repeat;
 }
 
+/* profile-apps */
+.profile-apps {
+  margin-top: 20px;
+}
+.profile-apps__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.profile-apps__list {
+  display: flex;
+  flex-direction: column;
+}
+.profile-app__item {
+  border: 1px solid @greySecondary;
+  border-radius: 6px;
+  background: white;
+  padding: 10px 63px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.profile-app__logo {
+  width: 113px;
+  height: 45px;
+  text-indent: -9999px;
+}
+
+/* profile-accounts */
+.profile-accounts {
+  margin-top: 20px;
+}
+.profile-accounts__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.account__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid @greySecondary;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.account__main {
+  display: flex;
+  align-items: center;
+}
+.account__icon {
+  margin-right: 5px;
+}
+.account__name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 /* buttons */
 .btn_primary {
   border-radius: 6px;
@@ -352,6 +413,9 @@ button {
   background-size: cover;
   text-indent: -9999px;
 }
+.connect-btn {
+  font-size: 12px;
+}
 
 /* icons */
 .heart-icon {
@@ -389,3 +453,34 @@ button {
   background: url('../images/community/chat.svg');
   background-size: cover;
 }
+.account-icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url('../images/community/arrow-right.svg');
+  background-size: cover;
+}
+.accepted-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/community/accepted.svg');
+  background-size: cover;
+}
+
+.logo-schoolpicker {
+  background-image: url('../images/community/schoolpicker-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo-share {
+  background-image: url('../images/community/share-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo-chat {
+  background-image: url('../images/community/chat-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
