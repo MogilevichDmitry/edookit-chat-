@@ -29,6 +29,8 @@ button {
 }
 .header {
   background-color: #557ab4;
+  background: -webkit-linear-gradient( left, #5387BE, #5A569B);
+  background: linear-gradient( 90deg, #5387BE, #5A569B);
   color: @white;
 }
 .header-wrapper {
@@ -118,7 +120,7 @@ button {
 }
 .people__heading-icon {
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   margin-left: 6px;
 }
 .user__info {
@@ -133,6 +135,7 @@ button {
   img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
 }
 .user__name {
@@ -269,6 +272,7 @@ button {
   img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
 }
 .profile-user__description {
@@ -329,7 +333,7 @@ button {
   justify-content: space-between;
   border-radius: 6px;
   border: 1px solid @greySecondary;
-  padding: 10px;
+  padding: 9px 7px;
   margin-bottom: 10px;
   background: white;
   &:last-child {
@@ -357,10 +361,10 @@ button {
   font-size: 14px;
   letter-spacing: .1px;
 }
-.nav-grid-btn {
+.menu-btn {
   width: 21px;
   height: 21px;
-  background: url('../images/community/grid.svg');
+  background: url('../images/community/menu.svg');
   background-size: cover;
   text-indent: -9999px;
 }
@@ -381,33 +385,33 @@ button {
 .chat-btn {
   width: 16px;
   height: 15px;
-  background: url('../images/community/chat.svg');
+  background: url('../images/community/channel.svg');
   background-size: cover;
   text-indent: -9999px;
 }
 .edit-btn {
   padding-left: 24px;
-  background-image: url(http://localhost:63342/edookit/styles/../images/pen.svg);
+  background-image: url('../images/community/edit.svg');
   background-size: 11px;
   background-repeat: no-repeat;
   background-position: 9px center;
 }
 .open-btn_brown {
-  width: 16px;
+  width: 13px;
   height: 16px;
   background: url('../images/community/enter_brown.svg');
   background-size: cover;
   text-indent: -9999px;
 }
 .open-btn_green {
-  width: 16px;
+  width: 13px;
   height: 16px;
   background: url('../images/community/enter_green.svg');
   background-size: cover;
   text-indent: -9999px;
 }
 .open-btn_pink {
-  width: 16px;
+  width: 13px;
   height: 16px;
   background: url('../images/community/enter_pink.svg');
   background-size: cover;
@@ -432,6 +436,13 @@ button {
   background: url('../images/community/save.svg');
   background-size: cover;
 }
+.save-colored-icon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background: url('../images/community/save_colored.svg');
+  background-size: cover;
+}
 .school-icon {
   display: inline-block;
   width: 16px;
@@ -450,7 +461,7 @@ button {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background: url('../images/community/chat.svg');
+  background: url('../images/community/channel.svg');
   background-size: cover;
 }
 .account-icon {
@@ -460,11 +471,11 @@ button {
   background: url('../images/community/arrow-right.svg');
   background-size: cover;
 }
-.accepted-icon {
+.checked-icon {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url('../images/community/accepted.svg');
+  background: url('../images/community/checked.svg');
   background-size: cover;
 }
 
