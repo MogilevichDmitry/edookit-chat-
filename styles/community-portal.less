@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
+@import './colors.less';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background: none;
+  &:focus {
+    outline: 1px solid @blue;
+  }
+}
+.main {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: @greyPrimary;
+  min-height: 100vh;
+}
+.header {
+  background-color: #557ab4;
+  color: @white;
+}
+.header-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.logo {
+  font-size: 18px;
+}
+.header__aside {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.header__notifications {
+  margin: 0 20px 0;
+}
+.notifications {
+  position: relative;
+}
+.notifications__amount {
+  position: absolute;
+  top: -5px;
+  right: -1px;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 2px 3px;
+  text-align: center;
+  border-radius: 50%;
+  background: @orangeAlert;
+}
+.username {
+  font-size: 17.5px;
+  letter-spacing: 0.5px;
+}
+
+
+/* buttons */
+.nav-grid-btn {
+  width: 21px;
+  height: 21px;
+  background: url('../images/community/grid.svg');
+  background-size: cover;
+  text-indent: -9999px;
+}
+.notifications-btn {
+  width: 27px;
+  height: 28px;
+  background: url('../images/community/notifications.svg');
+  background-size: cover;
+  text-indent: -9999px;
+}
+
