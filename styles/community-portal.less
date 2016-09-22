@@ -147,7 +147,7 @@ button {
 }
 .menu__item-btn {
   background: @blue;
-  border-radius: 3px;
+  border-radius: 6px;
   color: white;
   font-weight: 600;
   padding: 4px 20px;
@@ -448,6 +448,10 @@ button {
   background: white;
   padding: 10px 63px;
   margin-bottom: 10px;
+  transition: .2s;
+  &:hover, &:focus {
+    background-color: #D1E6F7;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -526,7 +530,7 @@ button {
   border-radius: 6px;
   background: @blue;
   color: white;
-  padding: 4px 10px;
+  padding: 6px 13px;
   font-size: 14px;
   letter-spacing: .1px;
 }
@@ -534,7 +538,7 @@ button {
   border-radius: 6px;
   background: @redAlert;
   color: white;
-  padding: 4px 10px;
+  padding: 6px 13px;
   font-size: 14px;
   letter-spacing: .1px;
 }
