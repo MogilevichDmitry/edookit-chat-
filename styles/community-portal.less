@@ -305,10 +305,17 @@ button {
   bottom: 1px;
   margin-left: 7px;
 }
-.content__favourites-btn {
+.content__favourites-done-btn {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  z-index: 1;
+}
+.content__favourites-edit-btn {
   position: absolute;
   right: 18px;
   top: 40px;
+  z-index: 1;
 }
 
 /* schools */
@@ -316,6 +323,8 @@ button {
   margin-bottom: 20px;
 }
 .schools__header {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 2px solid @sienna;
   position: relative;
@@ -338,6 +347,8 @@ button {
   margin-bottom: 20px;
 }
 .materials__header {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 2px solid @paleGreen;
   position: relative;
@@ -360,6 +371,8 @@ button {
   margin-bottom: 20px;
 }
 .channels__header {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 2px solid @mistyRose;
   position: relative;
@@ -595,6 +608,13 @@ button {
   background-repeat: no-repeat;
   background-position: 9px center;
 }
+.done-btn {
+  padding-left: 27px;
+  background-image: url('../images/community/accept.svg');
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 9px center;
+}
 .add-btn {
   border-radius: 6px;
   background-color: @blue;
@@ -616,6 +636,10 @@ button {
   background: url('../images/community/drag.svg');
   background-size: cover;
   text-indent: -9999px;
+}
+.drag-block-btn {
+  width: 35px;
+  height: 35px;
 }
 .delete-btn {
   width: 30px;
