@@ -448,9 +448,6 @@ button {
   margin-bottom: 10px;
 }
 .account__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-radius: 6px;
   border: 1px solid @greySecondary;
   padding: 9px 7px;
@@ -460,22 +457,63 @@ button {
     margin-bottom: 0;
   }
 }
+.account__briefly {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account__briefly-btn {
+  font-size: 12px;
+}
 .account__main {
   display: flex;
   align-items: center;
 }
-.account__icon {
+.account__btn {
   margin-right: 5px;
 }
 .account__name {
   font-weight: 600;
   font-size: 18px;
 }
+.account__expand {
+  overflow: hidden;
+}
+.account__expand-btn {
+  float: right;
+  margin-top: 10px;
+}
+.account__expand-item {
+  margin-top: 13px;
+  border-bottom: 1px solid @greySecondary;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.account__expand-heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+.account__expand-info {
+  font-size: 17.5px;
+  margin-bottom: 10px;
+}
+.account__expand-item-btn {
+  font-size: 12px;
+  float: right;
+}
 
 /* buttons */
 .btn_primary {
   border-radius: 6px;
   background: @blue;
+  color: white;
+  padding: 6px 13px;
+  font-size: 14px;
+  letter-spacing: .1px;
+}
+.btn_cancel {
+  border-radius: 6px;
+  background: @redAlert;
   color: white;
   padding: 6px 13px;
   font-size: 14px;
@@ -520,6 +558,31 @@ button {
   background-repeat: no-repeat;
   background-position: 9px center;
 }
+.add-btn {
+  border-radius: 6px;
+  background-color: @blue;
+  color: white;
+  padding: 6px 13px 6px 27px;
+  background-image: url('../images/plus.svg');
+  background-repeat: no-repeat;
+  background-position: 5px 1px;
+  background-size: 24px;
+  transition: .2s;
+  &:hover, &:focus {
+    background-color: darken(@blue, 14%);
+  }
+}
+.expand-btn {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url('../images/community/arrow-right.svg');
+  background-size: cover;
+  text-indent: -9999px;
+  &_active {
+    transform: rotate(90deg);
+  }
+}
 .open-btn_brown {
   width: 13px;
   height: 16px;
@@ -540,9 +603,6 @@ button {
   background: url('../images/community/enter_pink.svg');
   background-size: cover;
   text-indent: -9999px;
-}
-.connect-btn {
-  font-size: 12px;
 }
 
 /* icons */
@@ -586,13 +646,6 @@ button {
   width: 16px;
   height: 15px;
   background: url('../images/community/channel.svg');
-  background-size: cover;
-}
-.account-icon {
-  display: inline-block;
-  width: 23px;
-  height: 23px;
-  background: url('../images/community/arrow-right.svg');
   background-size: cover;
 }
 .checked-icon {
