@@ -56,7 +56,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 15px 0;
+  padding: 20px 0 0 15px;
 }
 .header__logo {
   display: inline-block;
@@ -221,7 +221,7 @@ input, textarea {
 .search__form {
   display: flex;
   position: relative;
-  width: 58%;
+  width: 58.5%;
   border: 1px solid @border;
   border-radius: 6px;
   background: @white;
@@ -308,14 +308,14 @@ input, textarea {
   justify-content: space-between;
 }
 .content__aside {
-  min-width: 21%;
+  min-width: 20.7%;
 }
 .content__main {
   width: 100%;
   padding: 0 20px;
 }
 .content__aside-box {
-  padding: 12px 8px;
+  padding: 10px 9px;
   &:not(:first-child) {
     margin-top: 20px;
   }
@@ -588,9 +588,31 @@ input, textarea {
   display: inline-block;
   width: 41px;
   height: 41px;
-  background: url('../images/plus_blue.svg') no-repeat 0 0;
-  background-size: cover;
-  text-indent: -9999px;
+}
+
+/* detail */
+.detail {
+
+}
+.detail__heading {
+  font-size: 1.594em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.detail__item {
+  display: flex;
+  padding: 8px 4px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.detail__item-btn {
+  margin-right: 5px;
+}
+.detail__item-name {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* buttons */
@@ -649,6 +671,22 @@ input, textarea {
   background: url('../images/menu.svg');
   background-size: cover;
   text-indent: -9999px;
+}
+.add-plus-btn {
+  background: url('../images/plus_blue.svg') no-repeat 0 0;
+  text-indent: -9999px;
+  background-size: cover;
+}
+.expand-btn {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url('../images/arrow-right.svg');
+  background-size: cover;
+  text-indent: -9999px;
+  &_active {
+    transform: rotate(90deg);
+  }
 }
 .notifications-btn {
   width: 27px;
