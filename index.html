@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+  <title>index</title>
+  <link rel="stylesheet/less" href="styles/style.less">
 </head>
 <body>
-    <h1>Edookit Chat</h1>
+<div class="wrapper">
+  <div class="header">
+    <div class="main">
+      <div class="header-wrapper">
+        <a href="#" class="header__logo logo">
+          <span>edookit chat</span>
+        </a>
+        <form class="search__form home__search-form">
+          <ul class="tags-list">
+            <li class="tags-list__item">
+              Brno
+              <button class="list-item__close-btn close-btn">delete</button>
+            </li>
+          </ul>
+          <input class="search__input" type="text"/>
+          <input class="search__btn" id="search-button" type="submit" value="search"/>
+          <label class="search__btn-label" for="search-button"></label>
+        </form>
+        <div class="header__aside">
+          <div class="header__menu">
+            <button id="menu-btn" class="menu-btn">menu</button>
+            <div id="menu-list" class="menu-list _no-visible">
+              <div class="menu__item menu__item-schoolpicker">
+                <div class="logo-schoolpicker">
+                  edookit schoolpicker
+                </div>
+                <a href="#" class="menu__item-btn">Enter</a>
+                <div class="menu__item-img">
+                  <img src="./images/logos/img-schoolpicker.png" alt="schoolpicker picture">
+                </div>
+              </div>
+              <div class="menu__item menu__item-share">
+                <div class="logo-share">
+                  edookit share
+                </div>
+                <a href="#" class="menu__item-btn">Enter</a>
+                <div class="menu__item-img">
+                  <img src="./images/logos/img-share.png" alt="share-portal picture">
+                </div>
+              </div>
+              <div class="menu__item menu__item-chat">
+                <div class="logo-chat">
+                  edookit chat
+                </div>
+                <a class="menu__item-btn btn_disabled">Coming soon</a>
+                <div class="menu__item-img">
+                  <img src="./images/logos/img-chat.png" alt="edookit chat picture">
+                </div>
+              </div>
+              <div class="menu__item menu__item-dashboard">
+                <div class="logo-dashboard"></div>
+                <div class="menu__item-title">Dashboard</div>
+                <a href="#" class="menu__item-btn">Enter</a>
+              </div>
+              <div class="menu__item menu__item-contacts">
+                <div class="logo-contacts"></div>
+                <div class="menu__item-title">Contacts</div>
+                <a href="#" class="menu__item-btn">Enter</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__notifications notifications">
+            <button class="notifications-btn">notifications</button>
+            <div class="notifications__amount">22</div>
+          </div>
+          <div class="header__profile">
+            <div class="header__username">
+              Noah Hernandez
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--header-->
+</div>
 </body>
+<script src="js/less.js"></script>
 </html>
