@@ -100,7 +100,7 @@
                 >
                   forward
                 </button>
-                <div class="groups-list__item">5.A</div>
+                <button class="groups-list__item groups-list__item_active">5.A</button>
                 <div class="groups-list__item">UZ</div>
                 <div class="groups-list__item">T1C</div>
                 <div class="groups-list__item">ZSZ</div>
@@ -112,9 +112,18 @@
                 <button class="channels__header-btn add-plus-btn">add channel</button>
               </div>
               <div class="channels__list">
-                <div class="list__item">matematicke cviceni</div>
-                <div class="list__item">obecne informace</div>
-                <div class="list__item">obecne informace</div>
+                <div class="list__item channels__item">
+                  <div class="channels__icon"></div>
+                  <div class="channels__title">matematicke cviceni</div>
+                </div>
+                <div class="list__item channels__item">
+                  <div class="channels__icon"></div>
+                  <div class="channels__title">obecne informace</div>
+                </div>
+                <div class="list__item channels__item">
+                  <div class="channels__icon"></div>
+                  <div class="channels__title">pretty channel</div>
+                </div>
               </div>
             </div><!--channels-->
             <div class="people">
@@ -122,7 +131,7 @@
                 <h2 class="people__heading">People</h2>
               </div>
               <div class="people__list">
-                <div class="list__item">
+                <div class="list__item list__item_active">
                   <div class="people__user-info">
                     <div class="people__user-img">
                       <img src="./images/user-default.png" alt="user photo" />
@@ -158,9 +167,18 @@
                 <h2 class="discussions__heading">Discussions</h2>
               </div>
               <div class="discussions__list">
-                <div class="list__item">discussions cviceni</div>
-                <div class="list__item">obediscussions ormace</div>
-                <div class="list__item">discus sionsace</div>
+                <div class="list__item discussions__item">
+                  <div class="discussions__icon"></div>
+                  <div class="discussions__title">discussions cviceni</div>
+                </div>
+                <div class="list__item discussions__item">
+                  <div class="discussions__icon"></div>
+                  <div class="discussions__title">obediscussions ormace</div>
+                </div>
+                <div class="list__item discussions__item">
+                  <div class="discussions__icon"></div>
+                  <div class="discussions__title">discus sionsace</div>
+                </div>
               </div>
             </div><!--discussions-->
           </div>
@@ -285,10 +303,16 @@
                     ak lze zmenit ikonu skoly pri prihlasovani a zahvali?
                   </div>
                   <div class="chat__files">
-                    <a class="chat__file box" href="#">
+                    <a class="chat__file file_jpg box" href="#">
                       Prilozeny subor1.jpg
                     </a>
-                    <a class="chat__file box" href="#">
+                    <a class="chat__file file_pdf box" href="#">
+                      Prilozeny subor1.pdf
+                    </a>
+                    <a class="chat__file file_xslx box" href="#">
+                      Prilozeny subor1.pdf
+                    </a>
+                    <a class="chat__file file_docx box" href="#">
                       Prilozeny subor1.pdf
                     </a>
                   </div>
