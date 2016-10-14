@@ -100,8 +100,8 @@
                 >
                   forward
                 </button>
-                <button class="groups-list__item groups-list__item_active">5.A</button>
-                <div class="groups-list__item">UZ</div>
+                <div class="groups-list__item groups-list__item_alert groups-list__item_active">5.A</div>
+                <div class="groups-list__item groups-list__item_alert">UZ</div>
                 <div class="groups-list__item">T1C</div>
                 <div class="groups-list__item">ZSZ</div>
               </div>
@@ -112,42 +112,56 @@
                 <button class="channels__header-btn add-plus-btn">add channel</button>
               </div>
               <div class="channels__list">
-                <div class="list__item channels__item">
-                  <div class="channels__icon"></div>
-                  <div class="channels__title">matematicke cviceni</div>
+                <div class="list__item channels__item list__item_alert">
+                  <div class="channels__main">
+                    <div class="channels__icon"></div>
+                    <div class="channels__title">matematicke cviceni</div>
+                  </div>
+                  <div class="alert-count">2</div>
                 </div>
                 <div class="list__item channels__item">
-                  <div class="channels__icon"></div>
-                  <div class="channels__title">obecne informace</div>
+                  <div class="channels__main">
+                    <div class="channels__icon"></div>
+                    <div class="channels__title">obecne informace</div>
+                  </div>
                 </div>
                 <div class="list__item channels__item">
-                  <div class="channels__icon"></div>
-                  <div class="channels__title">pretty channel</div>
+                  <div class="channels__main">
+                    <div class="channels__icon"></div>
+                    <div class="channels__title">pretty channel</div>
+                  </div>
                 </div>
               </div>
             </div><!--channels-->
             <div class="people">
               <div class="people__header">
                 <h2 class="people__heading">People</h2>
+                <button class="people__header-btn add-message-btn">new message</button>
               </div>
               <div class="people__list">
-                <div class="list__item list__item_active">
+                <div class="list__item list__item_alert list__item_active">
                   <div class="people__user-info">
                     <div class="people__user-img">
                       <img src="./images/user-default.png" alt="user photo" />
                     </div>
                     <div class="people__username">Lilly Collins</div>
                   </div>
-                  <div class="people__user-status status_online"></div>
+                  <div class="people__user-aside">
+                    <div class="alert-count">2</div>
+                    <div class="people__user-status status_online"></div>
+                  </div>
                 </div>
-                <div class="list__item">
+                <div class="list__item list__item_alert">
                   <div class="people__user-info">
                     <div class="people__user-img">
                       <img src="./images/user-default.png" alt="user photo" />
                     </div>
                     <div class="people__username">Anna Kendrick</div>
                   </div>
-                  <div class="people__user-status status_online"></div>
+                  <div class="people__user-aside">
+                    <div class="alert-count">2</div>
+                    <div class="people__user-status status_online"></div>
+                  </div>
                 </div>
                 <div class="list__item">
                   <div class="people__user-info">
@@ -156,7 +170,9 @@
                     </div>
                     <div class="people__username">Martin Danilczyk</div>
                   </div>
-                  <div class="people__user-status status_offline"></div>
+                  <div class="people__user-aside">
+                    <div class="people__user-status status_offline"></div>
+                  </div>
                 </div>
               </div>
             </div><!--people-->
@@ -193,7 +209,6 @@
               </div>
               <div class="chat__header-aside">
                 <button class="chat__header-settings-btn settings-btn">settings</button>
-                <button>wbutton</button>
               </div>
             </div>
             <div class="chat__messages">
@@ -290,11 +305,11 @@
                 </div>
               </div>
               <div class="chat__message-date-split">Today</div>
-              <div class="chat__message">
+              <div class="chat__message chat__mesage_alert">
                 <div class="chat__message-img">
                   <img src="./images/user-default.png" alt="user photo" />
                 </div>
-                <div class="chat__message-main">
+                <div class="chat__message-main chat__message-main_alert">
                   <div class="chat__message-metadata">
                     <div class="chat__message-username">Lukas Moravec</div>
                     <div class="chat__message-time">[06:30 PM]</div>
@@ -310,10 +325,10 @@
                       Prilozeny subor1.pdf
                     </a>
                     <a class="chat__file file_xslx box" href="#">
-                      Prilozeny subor1.pdf
+                      Prilozeny subor1.xslx
                     </a>
                     <a class="chat__file file_docx box" href="#">
-                      Prilozeny subor1.pdf
+                      Prilozeny subor1.docx
                     </a>
                   </div>
                 </div>
@@ -333,16 +348,218 @@
               <h2 class="detail__heading">Detail</h2>
               <div class="detail-list">
                 <div class="detail__item box">
-                  <button class="detail__item-btn expand-btn">expand</button>
-                  <div class="detail__item-name">Channel details</div>
+                  <div class="detail__item-header">
+                    <button class="detail__item-btn expand-btn">expand</button>
+                    <div class="detail__item-name">Channel details</div>
+                  </div>
+                  <div class="detail__item-content">
+                    <div class="detail-channel__param">
+                      <div class="detail-channel__param-title">Created:</div>
+                      <div class="detail-channel__param-info">17.09.2016</div>
+                    </div>
+                    <div class="detail-channel__param">
+                      <div class="detail-channel__param-title">Owner:</div>
+                      <div class="detail-channel__param-info channel__param-owner">
+                        Francisco Turner
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="detail__item box">
-                  <button class="detail__item-btn expand-btn">expand</button>
-                  <div class="detail__item-name">People in the channel</div>
+                  <div class="detail__item-header">
+                    <button class="detail__item-btn expand-btn">expand</button>
+                    <div class="detail__item-name">People</div>
+                    <div class="people__counter">
+                      <span class="people__counter_online">4</span>
+                      <span>/</span>
+                      <span>13</span>
+                    </div>
+                  </div>
+                  <div class="detail__item-content">
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_online"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_online"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_online"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_online"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                    <div class="detail-people__item">
+                      <div class="people__user-info">
+                        <div class="people__user-img">
+                          <img src="./images/user-default.png" alt="user photo">
+                        </div>
+                        <div class="people__username">Anna Kendrick</div>
+                      </div>
+                      <div class="people__user-aside">
+                        <div class="people__user-status status_offline"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="detail__item box">
-                  <button class="detail__item-btn expand-btn">expand</button>
-                  <div class="detail__item-name">Shared files</div>
+                  <div class="detail__item-header">
+                    <button class="detail__item-btn expand-btn">expand</button>
+                    <div class="detail__item-name">Shared files</div>
+                  </div>
+                  <div class="detail__item-content">
+                    <div class="detail-shared__item">
+                      <div class="detail-shared__img file_jpg"></div>
+                      <div class="detail-shared__main">
+                        <div class="detail-shared__name">Prilozeny subor1.jpg</div>
+                        <div class="detail-shared__metadata">
+                          <div class="detail-shared__metadata-item">
+                            <span class="shared__metadata-title">Uploaded:</span>
+                            <span class="shared__metadata-info">11.10.2016</span>
+                          </div>
+                          <div class="detail-shared__metadata-item">
+                            <span class="shared__metadata-title">By:</span>
+                            <span class="shared__metadata-info">Curt Cobain</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-shared__item">
+                      <div class="detail-shared__img file_pdf"></div>
+                      <div class="detail-shared__main">
+                        <div class="detail-shared__name">Prilozeny subor1.pdf</div>
+                        <div class="detail-shared__metadata">
+                          <div class="detail-shared__metadata-item">
+                            <span class="shared__metadata-title">Uploaded:</span>
+                            <span class="shared__metadata-info">11.10.2016</span>
+                          </div>
+                          <div class="detail-shared__metadata-item">
+                            <span class="shared__metadata-title">By:</span>
+                            <span class="shared__metadata-info">Curt Cobain</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
